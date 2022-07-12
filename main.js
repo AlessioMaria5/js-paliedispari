@@ -8,13 +8,10 @@
 
 
 let parolaInserita = prompt('Inserisci una parola');
-
 console.log(parolaInserita);
+const parolaScomposta = parolaInserita.split('');
+console.log(parolaScomposta);
 
 function palindroma () {
 
-    const parolaScomposta = parolaInserita.split('');
-    console.log(parolaScomposta);
-
 }
-
