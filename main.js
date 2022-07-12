@@ -15,9 +15,9 @@ const alContrario = [];
 
 function parolaAlContrario(){
 
-    let risultato
+    
     for( i = parolaScomposta.length -1 ; i >= 0; i--) {
-        let risultato = alContrario.push(parolaScomposta[i])   
+    alContrario.push(parolaScomposta[i])   
     }
 }
 
