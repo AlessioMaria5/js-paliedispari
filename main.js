@@ -11,19 +11,30 @@ let parolaInserita = prompt('Inserisci una parola');
 console.log(parolaInserita);
 const parolaScomposta = parolaInserita.split('');
 console.log(parolaScomposta);
+const alContrario = []; 
 
-for( i = 0; i < parolaScomposta.length; i++) {
+function parolaAlContrario(){
 
-    console.log('il numero del ciclo è ' +i);
-    console.log(parolaScomposta);
-
+    let risultato
+    for( i = parolaScomposta.length -1 ; i >= 0; i--) {
+        let risultato = alContrario.push(parolaScomposta[i])   
+    }
 }
 
-for( i = parolaScomposta.length -1 ; i >= 0; i--) {
+let risultato = parolaAlContrario();
+console.log(alContrario);
 
-    console.log('il numero del ciclo è ' + i);
-    console.log(parolaScomposta[i]);
+if (risultato = parolaInserita) {
+
+    alert('palindroma');
 }
+
+else {
+
+    alert('normale');
+}
+
+
 
 
 // const parolaScompostaContrario = parolaScomposta.reverse('');  -- < METODO REVERSE >
