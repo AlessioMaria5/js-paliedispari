@@ -11,8 +11,18 @@ let parolaInserita = prompt('Inserisci una parola');
 console.log(parolaInserita);
 const parolaScomposta = parolaInserita.split('');
 console.log(parolaScomposta);
-const parolaScompostaContrario = parolaScomposta.reverse('');
-console.log(parolaScompostaContrario);
+console.log(parolaScomposta.length);
+
+
+// const parolaScompostaContrario = parolaScomposta.reverse('');  -- < METODO REVERSE >
+// console.log(parolaScompostaContrario); -- < METODO REVERSE > --------------------------------
+
+for( i = parolaScomposta.length; i >= 0; i--) {
+
+    console.log('il numero del ciclo è ' + i);
+    console.log(parolaScomposta[i]);
+
+}
 
 function palindroma () {
 
