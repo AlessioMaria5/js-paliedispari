@@ -8,31 +8,37 @@
 
 
 let parolaInserita = prompt('Inserisci una parola');
-console.log(parolaInserita);
 const parolaScomposta = parolaInserita.split('');
-console.log(parolaScomposta);
-const alContrario = []; 
 
-function parolaAlContrario(){
 
-    
+
+function parolaAlContrario(){ 
+
+    let x = 0 
+
     for( i = parolaScomposta.length -1 ; i >= 0; i--) {
-    alContrario.push(parolaScomposta[i])   
+
+        if(parolaScomposta[i] == parolaScomposta[x]){
+            return false
+        }
+    x++ 
+
+    return true;
     }
 }
 
-let risultato = parolaAlContrario();
-console.log(alContrario);
+let finale = parolaAlContrario();
 
-if (risultato = parolaInserita) {
+if (finale == true) {
 
-    alert('palindroma');
+    alert('normale')
 }
 
-else {
+else if (finale == false) {
 
-    alert('normale');
+    alert('palindromo');
 }
+
 
 
 
