@@ -9,6 +9,9 @@ function parolaAlContrario(parola){
         }
     x++ 
     }
+
+    return true;
+
 }
 
 let finale = parolaAlContrario(parolaInserita);
