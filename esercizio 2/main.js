@@ -19,13 +19,15 @@ function sommaSfida (x) {
 let finale = sommaSfida(inserisciNumero);
 console.log(finale);
 
-if(finale % 2 == 0) {
+function ruolo(x) {
+    
+    if(finale % 2 == 0) {
 
-    alert('vince il computer!');
-}
-
-else {
-
-    alert('vinci tu');
-}
+        alert('pari');
+    }
+    
+    else {
+    
+        alert('dispari');
+    }
 
