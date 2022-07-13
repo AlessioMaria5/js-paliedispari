@@ -7,12 +7,13 @@ while(pariDispari != 'Pari' && pariDispari != 'Dispari'){
 }
   let inserisciNumero = prompt('Inserisci Numero da 1 a 5');
 
-while(inserisciNumero >= 6) {
+while(inserisciNumero >=6 || inserisciNumero == 0) {
 
     alert('Numero non valido')
     inserisciNumero = prompt('Inserisci un valore valido');
 
 }
+
 let finale = sommaSfida(inserisciNumero);
 let miaScelta = pariOdispari(pariDispari);
 
